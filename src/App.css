@@ -1,3 +1,37 @@
 body{
     color: #fff7f1;
 }
+.items-card {
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px rgb(136 136 136 / 10%);
+    box-sizing: border-box;
+    min-height: 42vh;
+    /* z-index: 999; */
+}
+.inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100px !important;
+    height: 0px !important;
+    visibility: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s;
+    align-items: space-between;
+    transition: 0.3s;
+}
+.items-card:hover .inner {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    visibility: visible;
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1);
+    transition: 0.3s;
+}

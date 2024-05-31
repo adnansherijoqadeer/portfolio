@@ -23,17 +23,17 @@ const OurServices = () => {
   ];
   return (
     <div className="mt-20">
-      <h1 className="text-5xl font-bold font-sans text-center capitalize text-[#181818]">
+      <h1 className="hover:translate-y-[-5px] transition-all duration-300 ease-linear hover:text-[#fe964d] text-5xl font-bold font-sans text-center capitalize text-[#181818]">
         OUR SERVICES
       </h1>
       <div className="flex justify-evenly  gap-6 mb-9 px-10 mt-10">
 
 
         <div className="flex justify-evenly  gap-6 mb-9 px-10 mt-10">
-      {data.map((data)=>(
+      {data.map((data ,index)=>(
         
-        <div className="bg-[#fff] hover:translate-y-[-10px] shadow-cardshadow py-7 min-h-[22rem] px-5 flex justify-center items-center flex-col w-[33%] transition-all duration-300 ease-linear">
-            <img src={data.img} alt="" className="pb-6" />
+        <div key={index} className="bg-[#fff] cursor-pointer hover:translate-y-[-10px] shadow-cardshadow py-7 min-h-[22rem] px-5 flex justify-center items-center flex-col w-[33%] transition-all duration-300 ease-linear">
+            <img src={data.img} alt="" className="pb-6 hover:translate-y-[-5px] transition-all duration-300 ease-linear cursor-pointer" />
             <h1 className="text-[#181818] text-[22px] font-sans font-bold text-center">{data.title}</h1>
             <p className="font-medium text-center text-base text-[#6b6b84] capitalize">
              {data.para}

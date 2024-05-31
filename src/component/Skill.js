@@ -9,7 +9,7 @@ const Skill = () => {
 
   return (
     <div className="mt-20 mb-9 px-10">
-      <h1 className="text-5xl font-bold font-sans text-center capitalize text-[#181818]">
+      <h1 className="hover:translate-y-[-5px] transition-all duration-300 ease-linear hover:text-[#fe964d] text-5xl font-bold font-sans text-center capitalize text-[#181818]">
         my skill
       </h1>
       <div className="flex justify-around gap-9 items-center mt-10">
@@ -216,7 +216,7 @@ const Skill = () => {
         </div>
       </div>
 
-      <h1 className="text-5xl mt-16 font-bold font-sans text-center capitalize text-[#181818]">
+      <h1 className="hover:translate-y-[-5px] transition-all duration-300 ease-linear hover:text-[#fe964d] text-5xl mt-16 font-bold font-sans text-center capitalize text-[#181818]">
         other skill
       </h1>
       <div className="flex justify-between gap-9 items-center mt-10">

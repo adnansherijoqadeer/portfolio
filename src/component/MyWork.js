@@ -7,20 +7,66 @@ import img5 from "../asset/image/Capture5.PNG";
 import img6 from "../asset/image/Capture6.PNG";
 import img7 from "../asset/image/Capture7.PNG";
 import img8 from "../asset/image/Capture8.PNG";
-// transform: scale(1.1);
+import img9 from "../asset/image/Capture9.PNG";
+import "../App.css";
 const MyWork = () => {
-  const images = [img1, img3, img4, img5, img6, img7, img8];
-  const imgesArray = images.slice(0,3)
+  const images = [
+    {
+      
+      img:img9,
+      url:"https://reactailwind-project.vercel.app/admin/default",
+    },
+    {
+      
+      img:img4,
+      url:"https://socialmediadishboard.vercel.app/",
+    },
+    {
+      
+      img:img5,
+      url:"https://astounding-biscochitos-4abc5e.netlify.app/",
+    },
+    {
+      
+      img:img6,
+      url:"https://www.travl.se/",
+    },
+    {
+      
+      img:img1,
+      url:"https://zoffiereactresuma.vercel.app/",
+    },
+    {
+      
+      img:img3,
+      url:"https://farmwebsite-gray.vercel.app/",
+    },
+    {
+      
+      img:img7,
+      url:"https://smartbookv1.herokuapp.com/",
+    },
+    {
+      
+      img:img8,
+      url:"https://northcodex.com/",
+    },
+  ]
   return (
     <div className="mb-10 px-10">
-      <h1 className="text-5xl font-bold font-sans text-center capitalize text-[#181818]">
+      <h1 className="hover:translate-y-[-5px] transition-all duration-300 ease-linear hover:text-[#fe964d] text-5xl font-bold font-sans text-center capitalize text-[#181818]">
         my work
       </h1>
-      
-      <div className="grid grid-cols-3 gap-5 mx-auto">
-        {images.map((imges) => (
-          <div className="">
-            <img src={imges} alt="" className="h-[100%]" />
+
+      <div className="mt-20 grid grid-cols-3 gap-8 mx-auto">
+        {images.map((imges,index) => (
+          <div className="items-card" key={index}>
+            <div className="inner">
+              <a href={imges.url} target="_blank" rel="noopener noreferrer" className="hover:buttonshadow hover:translate-y-[-2px] mt-4 capitalize bg-transparent rounded-md text-base font-bold py-1 px-10 border border-[#fe964d] w-18 mx-auto hover:text-[#fe964d]">
+                  View
+              </a>
+            </div>
+            <img src={imges.img} alt="" className="h-[100%]" />
           </div>
         ))}
       </div>
